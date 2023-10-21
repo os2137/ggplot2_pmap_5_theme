@@ -1,0 +1,25 @@
+---
+title: "theme"
+format: html
+editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+## [Theme link to the videos](https://www.youtube.com/watch?v=V0CzheP9yMc&list=PLS6tnpTr39sEsSJ16BKgXPNFcl3y6gjEv&index=3)
+
+## [Slides](https://datavizm20.classes.andrewheiss.com/content/05-content/#slides)
+
+```{r}
+library(tidyverse)
+library(ggThemeAssist) # helps in understanding ggthemes graphically
+```
+
+```{r}
+my_plot <- ggplot(mpg, aes(x = displ, y = hwy, color = drv)) + 
+  geom_point(size = 2)
+
+my_plot 
+```
+
+# To use ggThemeAssist you first need to create the ggplot and save it into an object and then select the plot object that you save, go to the Addin and then click the gg Theme Assistant under the add in then it will populate the various gg theme options for you,  select various options as desired and once you are ready, click done with will generate the corresponding code for you in the qmd file and then you can use it as is or tweak the theme options as required.  
